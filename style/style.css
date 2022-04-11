@@ -317,13 +317,15 @@ strong {
 .about-us .header {
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: #fff;
 }
 @media (min-width: 768px) {
   .about-us .header {
     color: inherit;
+    text-align: left;
+    margin-bottom: 5rem;
   }
 }
 .about-us .header .title {
@@ -350,9 +352,21 @@ strong {
   }
 }
 .about-us .video {
-  background-color: #666;
+  display: flex;
+  background: url(https://i.ytimg.com/vi_webp/dMawgx5aP4g/maxresdefault.webp);
+  background-position: center;
+  background-size: cover;
   border-radius: 1rem;
   aspect-ratio: 16/9;
+  justify-content: center;
+}
+.about-us .video:hover .play {
+  width: 5.5rem;
+}
+.about-us .video .play {
+  color: #fff;
+  width: 5rem;
+  transition: 0.2s width ease-in-out;
 }
 @media (min-width: 768px) {
   .about-us .video {
@@ -412,8 +426,8 @@ strong {
   border-radius: 1rem;
 }
 .attendance .items .item .image {
-  background-color: red;
   width: 100%;
+  border-radius: 1rem 1rem 0 0;
 }
 .attendance .items .item .title {
   padding: 1rem;
